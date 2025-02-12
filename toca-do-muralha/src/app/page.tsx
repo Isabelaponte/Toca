@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import logo from "../assets/logo.svg";
 import Header from "@/components/header/header";
+import Chip from "@/components/chip/chip";
 
 export default function Home() {
   return (
@@ -16,6 +17,8 @@ export default function Home() {
           feliz. Quando bater a vontade, é só chamar um garçom e a gente prepara
           tudo com carinho. Aproveite! 🍻✨
         </p>
+
+        <Chip name="Refrigerantes" />
       </main>
     </div>
   );

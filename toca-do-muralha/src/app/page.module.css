@@ -9,6 +9,7 @@
 
   min-height: 100svh;
   font-family: var(--font-geist-sans);
+  margin: 2rem 3rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -33,7 +34,6 @@
 .description {
   padding-bottom: 0.5rem;
   font-size: 12px;
-  margin: 0 3rem;
 }
 
 /* .main ol {
