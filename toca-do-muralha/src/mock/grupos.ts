@@ -18,22 +18,18 @@ export const grupos: IGrupos[] = [
             {
                 id: "21",
                 name: "Litrão",
-                complementos: []
             },
             {
                 id: "22",
                 name: "600ml",
-                complementos: []
             },
             {
                 id: "23",
                 name: "Long Neck",
-                complementos: []
             },
             {
                 id: "24",
                 name: "lata",
-                complementos: []
             },
         ],
         complementos: []
@@ -45,12 +41,10 @@ export const grupos: IGrupos[] = [
             {
                 id: "31",
                 name: "Garrafa",
-                complementos: []
             },
             {
                 id: "32",
                 name: "Natural (Fruta)",
-                complementos: []
             }
         ],
         complementos: []
@@ -62,37 +56,30 @@ export const grupos: IGrupos[] = [
             {
                 id: "41",
                 name: "Caipirinha",
-                complementos: []
             },
             {
                 id: "42",
                 name: "Caipisaquê",
-                complementos: []
             },
             {
                 id: "43",
                 name: "Caipivodka",
-                complementos: []
             },
             {
                 id: "44",
                 name: "Caipigin",
-                complementos: []
             },
             {
                 id: "45",
                 name: "Caipicoquetel",
-                complementos: []
             },
             {
                 id: "46",
                 name: "Zero Álcool",
-                complementos: []
             },
             {
                 id: "47",
                 name: "Coice de Mula",
-                complementos: []
             }
         ],
         complementos: []
@@ -149,7 +136,6 @@ export const grupos: IGrupos[] = [
             {
                 id: "141",
                 name: "Bebidas Quentes",
-                complementos: []
             }
         ],
         complementos: []

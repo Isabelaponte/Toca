@@ -55,7 +55,6 @@
   border-radius: 10px;
 }
 
-
 .groupTitle{
   margin-top: 2.5rem;
   font-size: 18px;
@@ -67,4 +66,10 @@
   font-size: 12px;
   text-align: center;
   color: var(--text-secondary);
+}
+
+.subgroupTitle {
+  font-size: 13px;
+  color: var(--primary);
+  margin-top: 1rem;
 }

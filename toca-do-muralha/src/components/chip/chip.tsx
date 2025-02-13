@@ -7,5 +7,12 @@ interface ChipProps {
 }
 
 export default function Chip({ name, onClick, isActive }: ChipProps) {
-  return <button className={`${styles.chip} ${isActive ? styles.active : ""}`} onClick={onClick}>{name}</button>;
+  return (
+    <button
+      className={`${styles.chip} ${isActive ? styles.active : ""}`}
+      onClick={onClick}
+    >
+      {name}
+    </button>
+  );
 }
