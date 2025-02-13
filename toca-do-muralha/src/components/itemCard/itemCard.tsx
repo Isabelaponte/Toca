@@ -7,7 +7,7 @@ export default function ItemCard({ name, image, description, price }: any) {
     <div className={styles.itemCard}>
       <div className={styles.itemInfo}>
         <Image src={Pao} alt={name} className={styles.itemImage} />
-        <div>
+        <div style={{ maxWidth: "110px" }}>
           <h3 className={styles.itemName}>{name}</h3>
           <p className={styles.itemDescription}>{description}</p>
         </div>

@@ -1,10 +1,23 @@
+"use client";
+import { useState } from "react";
 import styles from "./page.module.css";
 import Header from "@/components/header/header";
 import Chip from "@/components/chip/chip";
 import { grupos } from "@/mock/grupos";
+import { produtos } from "@/mock/produtos";
 import ItemCard from "@/components/itemCard/itemCard";
 
 export default function Home() {
+  const [grupoSelecionado, setGrupoSelecionado] = useState(grupos[0].id);
+
+  const handleGrupoClick = (id: string) => {
+    setGrupoSelecionado(id);
+  };
+
+  const produtosFiltrados = produtos.filter(
+    (produto) => produto.grupoId === grupoSelecionado
+  );
+
   return (
     <div>
       <Header />
@@ -17,22 +30,38 @@ export default function Home() {
           feliz. Quando bater a vontade, é só chamar um garçom e a gente prepara
           tudo com carinho. Aproveite! 🍻✨
         </p>
-        {/* TODO: Fazer o slider de grupos */}
 
         <section className={styles.chipSlider}>
           {grupos.map((grupo) => (
-            <Chip name={grupo.name} key={grupo.id} />
+            <Chip
+              key={grupo.id}
+              name={grupo.name}
+              onClick={() => handleGrupoClick(grupo.id)}
+              isActive={grupoSelecionado === grupo.id}
+            />
           ))}
         </section>
 
         <section>
           <header>
-            <h2 className={styles.groupTitle}>Cafeteria</h2>
-            <p className={styles.groupSubtitle}>
-              (Funcionamento das 6h até 15h)
-            </p>
+            <h2 className={styles.groupTitle}>
+              {grupos.find((g) => g.id === grupoSelecionado)?.name}
+            </h2>
           </header>
-          <ItemCard name="Pão na Chapa" image="../assets/img_item/image 2.png" description="paozinho quentinho" price="R$ 3.50" />
+
+          {produtosFiltrados.length > 0 ? (
+            produtosFiltrados.map((produto) => (
+              <ItemCard
+                key={produto.id}
+                name={produto.name}
+                image={produto.image}
+                description={produto.description}
+                price={produto.price}
+              />
+            ))
+          ) : (
+            <p className={styles.emptyMessage}>Nenhum item disponível.</p>
+          )}
         </section>
       </main>
     </div>

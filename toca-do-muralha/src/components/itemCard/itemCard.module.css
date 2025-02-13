@@ -28,11 +28,10 @@
 
 .itemDescription {
   font-size: 11px;
-  text-align: center;
 }
 
 .itemPrice {
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 500;
   color: var(--primary);
 }   
