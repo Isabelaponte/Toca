@@ -7,8 +7,106 @@ interface IGrupos {
 
 export const grupos: IGrupos[] = [
     {
+        id: "14",
+        name: "Cafeteria",
+        subgrupos: [
+            {
+                id: "141",
+                name: "Bebidas Quentes",
+            }
+        ],
+        complementos: []
+    },
+    {
         id: "1",
         name: "Refrigerantes",
+        complementos: []
+    },
+    {
+        id: "6",
+        name: "Águas",
+        complementos: []
+    },
+    {
+        id: "3",
+        name: "Sucos",
+        subgrupos: [
+            {
+                id: "32",
+                name: "Natural (Fruta)",
+            },
+            {
+                id: "31",
+                name: "Garrafa",
+            },
+        ],
+        complementos: []
+    },
+    {
+        id: "7",
+        name: "Porções",
+        subgrupos: [
+            {
+                id: "71",
+                name: "Batata",
+            },
+            {
+                id: "72",
+                name: "Polenta",
+            },
+            {
+                id: "73",
+                name: "Mandioca",
+            },
+            {
+                id: "74",
+                name: "Almôndegas",
+            },
+            {
+                id: "75",
+                name: "Outros",
+            },
+        ],
+        complementos: []
+    },
+    {
+        id: "9",
+        name: "Torresmo",
+        complementos: []
+    },
+    {
+        id: "8",
+        name: "Peixes",
+        subgrupos: [
+            {
+                id: "81",
+                name: "Tilápia",
+            },
+            {
+                id: "82",
+                name: "Bacalhau"
+            }
+        ],
+        complementos: []
+    },
+    {
+        id: "10",
+        name: "Frango",
+        complementos: []
+    },
+    {
+        id: "11",
+        name: "Carnes",
+        complementos: []
+    },
+    {
+        id: "12",
+        name: "Linguiça",
+        complementos: []
+    },
+    {
+        id: "13",
+        name: "Mini Salgado",
         complementos: []
     },
     {
@@ -34,120 +132,45 @@ export const grupos: IGrupos[] = [
         ],
         complementos: []
     },
-    {
-        id: "3",
-        name: "Sucos",
-        subgrupos: [
-            {
-                id: "31",
-                name: "Garrafa",
-            },
-            {
-                id: "32",
-                name: "Natural (Fruta)",
-            }
-        ],
-        complementos: []
-    },
+
     {
         id: "4",
         name: "Drinks",
         subgrupos: [
             {
-                id: "41",
+                id: "157",
+                name: "Coice de Mula",
+            },
+            {
+                id: "151",
                 name: "Caipirinha",
             },
             {
-                id: "42",
+                id: "152",
                 name: "Caipisaquê",
             },
             {
-                id: "43",
+                id: "153",
                 name: "Caipivodka",
             },
             {
-                id: "44",
+                id: "154",
                 name: "Caipigin",
             },
             {
-                id: "45",
+                id: "155",
                 name: "Caipicoquetel",
             },
             {
-                id: "46",
+                id: "156",
                 name: "Zero Álcool",
             },
-            {
-                id: "47",
-                name: "Coice de Mula",
-            }
         ],
         complementos: []
     },
     {
         id: "5",
         name: "Energéticos",
-        complementos: []
-    },
-    {
-        id: "6",
-        name: "Águas",
-        complementos: []
-    },
-    {
-        id: "7",
-        name: "Porções",
-        complementos: []
-    },
-    {
-        id: "8",
-        name: "Peixes",
-        subgrupos: [
-            {
-                id: "81",
-                name: "Tilápia",
-            },
-            {
-                id: "82",
-                name: "Bacalhau"
-            }
-        ],
-        complementos: []
-    },
-    {
-        id: "9",
-        name: "Porco",
-        complementos: []
-    },
-    {
-        id: "10",
-        name: "Frango",
-        complementos: []
-    },
-    {
-        id: "11",
-        name: "Carnes",
-        complementos: []
-    },
-    {
-        id: "12",
-        name: "Linguiça",
-        complementos: []
-    },
-    {
-        id: "13",
-        name: "Mini Salgado",
-        complementos: []
-    },
-    {
-        id: "14",
-        name: "Cafeteria",
-        subgrupos: [
-            {
-                id: "141",
-                name: "Bebidas Quentes",
-            }
-        ],
         complementos: []
     },
     {
@@ -161,7 +184,11 @@ export const grupos: IGrupos[] = [
             },
             {
                 id: "42",
-                name: "Destilado",
+                name: "Whisky",
+            },
+            {
+                id: "43",
+                name: "Outras Bebidas",
             }
         ]
     }
