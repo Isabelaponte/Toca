@@ -3,6 +3,7 @@ interface IGrupos {
     name: string;
     subgrupos?: any[];
     complementos: any[];
+    categories: any[];
 }
 
 export const grupos: IGrupos[] = [
@@ -15,21 +16,57 @@ export const grupos: IGrupos[] = [
                 name: "Bebidas Quentes",
             }
         ],
+        categories: [
+            {
+                id: "1411",
+                name: "Cafeteria",
+            },
+        ],
         complementos: []
     },
     {
         id: "1",
         name: "Refrigerantes",
+        categories: [
+            {
+                id: "1411",
+                name: "Cafeteria",
+            },
+            {
+                id: "1412",
+                name: "Bar",
+            }
+        ],
         complementos: []
     },
     {
         id: "6",
         name: "Águas",
+        categories: [
+            {
+                id: "1411",
+                name: "Cafeteria",
+            },
+            {
+                id: "1412",
+                name: "Bar",
+            }
+        ],
         complementos: []
     },
     {
         id: "3",
         name: "Sucos",
+        categories: [
+            {
+                id: "1411",
+                name: "Cafeteria",
+            },
+            {
+                id: "1412",
+                name: "Bar",
+            }
+        ],
         subgrupos: [
             {
                 id: "32",
@@ -45,6 +82,12 @@ export const grupos: IGrupos[] = [
     {
         id: "7",
         name: "Porções",
+        categories: [
+            {
+                id: "1412",
+                name: "Bar",
+            }
+        ],
         subgrupos: [
             {
                 id: "71",
@@ -72,11 +115,23 @@ export const grupos: IGrupos[] = [
     {
         id: "9",
         name: "Torresmo",
+        categories: [
+            {
+                id: "1412",
+                name: "Bar",
+            }
+        ],
         complementos: []
     },
     {
         id: "8",
         name: "Peixes",
+        categories: [
+            {
+                id: "1412",
+                name: "Bar",
+            }
+        ],
         subgrupos: [
             {
                 id: "81",
@@ -92,21 +147,45 @@ export const grupos: IGrupos[] = [
     {
         id: "10",
         name: "Frango",
+        categories: [
+            {
+                id: "1412",
+                name: "Bar",
+            }
+        ],
         complementos: []
     },
     {
         id: "11",
         name: "Carnes",
+        categories: [
+            {
+                id: "1412",
+                name: "Bar",
+            }
+        ],
         complementos: []
     },
     {
         id: "12",
         name: "Linguiça",
+        categories: [
+            {
+                id: "1412",
+                name: "Bar",
+            }
+        ],
         complementos: []
     },
     {
         id: "13",
         name: "Mini Salgado",
+        categories: [
+            {
+                id: "1412",
+                name: "Bar",
+            }
+        ],
         complementos: []
     },
     {
@@ -129,6 +208,12 @@ export const grupos: IGrupos[] = [
                 id: "24",
                 name: "lata",
             },
+        ],
+        categories: [
+            {
+                id: "1412",
+                name: "Bar",
+            }
         ],
         complementos: []
     },
@@ -166,17 +251,32 @@ export const grupos: IGrupos[] = [
                 name: "Zero Álcool",
             },
         ],
+        categories: [
+            {
+                id: "1412",
+                name: "Bar",
+            }
+        ],
         complementos: []
     },
     {
         id: "5",
         name: "Energéticos",
+        categories: [
+            {
+                id: "1411",
+                name: "Cafeteria",
+            },
+            {
+                id: "1412",
+                name: "Bar",
+            }
+        ],
         complementos: []
     },
     {
         id: "15",
         name: "Doses",
-        complementos: [],
         subgrupos: [
             {
                 id: "41",
@@ -190,6 +290,13 @@ export const grupos: IGrupos[] = [
                 id: "43",
                 name: "Outras Bebidas",
             }
-        ]
+        ],
+        categories: [
+            {
+                id: "1412",
+                name: "Bar",
+            }
+        ],
+        complementos: [],
     }
 ];
