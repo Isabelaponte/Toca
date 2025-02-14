@@ -3,12 +3,11 @@ import { formatPrice } from "@/utils/utils";
 
 interface ItemCardProps {
   name: string;
-  image?: string;
   description?: string;
   price:number;
 }
 
-export default function ItemCard({ name, image, description, price }: ItemCardProps) {
+export default function ItemCard({ name, description, price }: ItemCardProps) {
   return (
     <div className={styles.itemCard}>
       <div className={styles.itemInfo}>
