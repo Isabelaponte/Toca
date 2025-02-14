@@ -102,6 +102,16 @@ export const grupos: IGrupos[] = [
     {
         id: "8",
         name: "Peixes",
+        subgrupos: [
+            {
+                id: "81",
+                name: "Tilápia",
+            },
+            {
+                id: "82",
+                name: "Bacalhau"
+            }
+        ],
         complementos: []
     },
     {
@@ -143,6 +153,16 @@ export const grupos: IGrupos[] = [
     {
         id: "15",
         name: "Doses",
-        complementos: []
+        complementos: [],
+        subgrupos: [
+            {
+                id: "41",
+                name: "Cachaça",
+            },
+            {
+                id: "42",
+                name: "Destilado",
+            }
+        ]
     }
 ];
