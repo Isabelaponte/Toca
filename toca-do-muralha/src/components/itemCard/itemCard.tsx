@@ -7,7 +7,7 @@ export default function ItemCard({ name, image, description, price }: any) {
   return (
     <div className={styles.itemCard}>
       <div className={styles.itemInfo}>
-        <Image src={Pao} alt={name} className={styles.itemImage} />
+        {/* <Image src={Pao} alt={name} className={styles.itemImage} /> */}
         <div className={styles.itemContent}>
           <h3 className={styles.itemName}>{name}</h3>
           <p className={styles.itemDescription}>{description}</p>

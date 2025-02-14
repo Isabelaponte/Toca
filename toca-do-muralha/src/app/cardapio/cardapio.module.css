@@ -35,3 +35,21 @@
     color: var(--primary);
     margin-top: 1rem;
 }
+
+.page {
+    min-height: 100svh;
+    font-family: var(--font-geist-sans);
+    margin: 2rem 3rem;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--primary);
+    margin: 2rem 0;
+}
+
+.backButton {
+    text-align: center;
+}

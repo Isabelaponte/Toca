@@ -25,61 +25,6 @@ export const grupos: IGrupos[] = [
         complementos: []
     },
     {
-        id: "1",
-        name: "Refrigerantes",
-        categories: [
-            {
-                id: "1411",
-                name: "Cafeteria",
-            },
-            {
-                id: "1412",
-                name: "Bar",
-            }
-        ],
-        complementos: []
-    },
-    {
-        id: "6",
-        name: "Águas",
-        categories: [
-            {
-                id: "1411",
-                name: "Cafeteria",
-            },
-            {
-                id: "1412",
-                name: "Bar",
-            }
-        ],
-        complementos: []
-    },
-    {
-        id: "3",
-        name: "Sucos",
-        categories: [
-            {
-                id: "1411",
-                name: "Cafeteria",
-            },
-            {
-                id: "1412",
-                name: "Bar",
-            }
-        ],
-        subgrupos: [
-            {
-                id: "32",
-                name: "Natural (Fruta)",
-            },
-            {
-                id: "31",
-                name: "Garrafa",
-            },
-        ],
-        complementos: []
-    },
-    {
         id: "7",
         name: "Porções",
         categories: [
@@ -217,7 +162,6 @@ export const grupos: IGrupos[] = [
         ],
         complementos: []
     },
-
     {
         id: "4",
         name: "Drinks",
@@ -260,21 +204,6 @@ export const grupos: IGrupos[] = [
         complementos: []
     },
     {
-        id: "5",
-        name: "Energéticos",
-        categories: [
-            {
-                id: "1411",
-                name: "Cafeteria",
-            },
-            {
-                id: "1412",
-                name: "Bar",
-            }
-        ],
-        complementos: []
-    },
-    {
         id: "15",
         name: "Doses",
         subgrupos: [
@@ -298,5 +227,75 @@ export const grupos: IGrupos[] = [
             }
         ],
         complementos: [],
-    }
+    },
+    {
+        id: "1",
+        name: "Refrigerantes",
+        categories: [
+            {
+                id: "1411",
+                name: "Cafeteria",
+            },
+            {
+                id: "1412",
+                name: "Bar",
+            }
+        ],
+        complementos: []
+    },
+    {
+        id: "6",
+        name: "Águas",
+        categories: [
+            {
+                id: "1411",
+                name: "Cafeteria",
+            },
+            {
+                id: "1412",
+                name: "Bar",
+            }
+        ],
+        complementos: []
+    },
+    {
+        id: "3",
+        name: "Sucos",
+        categories: [
+            {
+                id: "1411",
+                name: "Cafeteria",
+            },
+            {
+                id: "1412",
+                name: "Bar",
+            }
+        ],
+        subgrupos: [
+            {
+                id: "32",
+                name: "Natural (Fruta)",
+            },
+            {
+                id: "31",
+                name: "Garrafa",
+            },
+        ],
+        complementos: []
+    },
+    {
+        id: "5",
+        name: "Energéticos",
+        categories: [
+            {
+                id: "1411",
+                name: "Cafeteria",
+            },
+            {
+                id: "1412",
+                name: "Bar",
+            }
+        ],
+        complementos: []
+    },
 ];
