@@ -4,7 +4,7 @@ export interface IProduct {
     description?: string;
     image?: string;
     price: number;
-    grupoID: string;
+    grupoId: string;
     subgrupoId: string;
 }
 

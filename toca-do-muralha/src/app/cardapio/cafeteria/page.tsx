@@ -81,12 +81,11 @@ export default function Cafeteria() {
             grupoAtual.subgrupos.map((subgrupo) => (
               <div key={subgrupo.id}>
                 <h3 className={styles.subgroupTitle}>{subgrupo.name}</h3>
-                {produtosPorSubgrupo?.[subgrupo.id]?.length > 0 ? (
-                  produtosPorSubgrupo[subgrupo.id].map((produto: IProduct) => (
+                {produtosPorSubgrupo && produtosPorSubgrupo?.[subgrupo.id]?.length > 0 ? (
+                  produtosPorSubgrupo[subgrupo.id].map((produto) => (
                     <ItemCard
                       key={produto.id}
                       name={produto.name}
-                      image={produto.image}
                       description={produto.description}
                       price={produto.price}
                     />
