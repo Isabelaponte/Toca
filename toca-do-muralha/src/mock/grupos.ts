@@ -1,10 +1,4 @@
-interface IGrupos {
-    id: string;
-    name: string;
-    subgrupos?: any[];
-    complementos: any[];
-    categories: any[];
-}
+import { IGrupos } from "@/utils/types";
 
 export const grupos: IGrupos[] = [
     {

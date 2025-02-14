@@ -8,6 +8,7 @@ import { produtos } from "@/mock/produtos";
 import { useState } from "react";
 import Button from "@/components/button/button";
 import { redirect } from "next/navigation";
+import { IProduct } from "@/utils/types";
 
 const gruposBar = grupos.filter((grupo) =>
   grupo.categories.some((cat) => cat.id === "1412")
@@ -80,7 +81,7 @@ export default function Bar() {
               <div key={subgrupo.id}>
                 <h3 className={styles.subgroupTitle}>{subgrupo.name}</h3>
                 {produtosPorSubgrupo?.[subgrupo.id]?.length > 0 ? (
-                  produtosPorSubgrupo[subgrupo.id].map((produto: any) => (
+                  produtosPorSubgrupo[subgrupo.id].map((produto: IProduct) => (
                     <ItemCard
                       key={produto.id}
                       name={produto.name}
