@@ -8,7 +8,11 @@ export const grupos: IGrupos[] = [
             {
                 id: "141",
                 name: "Bebidas Quentes",
-            }
+            },
+            {
+                id: "142",
+                name: "Adicionais",
+            },
         ],
         categories: [
             {
@@ -142,10 +146,6 @@ export const grupos: IGrupos[] = [
             {
                 id: "23",
                 name: "Long Neck",
-            },
-            {
-                id: "24",
-                name: "lata",
             },
         ],
         categories: [
